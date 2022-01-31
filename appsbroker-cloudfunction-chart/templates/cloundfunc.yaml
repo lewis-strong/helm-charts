@@ -1,0 +1,36 @@
+apiVersion: cloudfunctions.cnrm.cloud.google.com/v1beta1
+kind: CloudFunctionsFunction
+metadata:
+  name: {{ .Release.Name }}-sample-httpstrigger
+spec:
+  projectRef:
+    external: "projects/{{ .Release.Namespace }}"
+  region: {{ .Values.cloudfunc.region | quote }}
+  runtime: {{ .Values.cloudfunc.runtime | quote }}
+  sourceArchiveUrl: {{ .Values.cloudfunc.sourceArchiveUrl | quote }}
+  entryPoint: "helloGET"
+{{ if eq .Values.cloudfunc.eventTrigger "https" }}
+  httpsTrigger:
+    securityLevel: "SECURE_OPTIONAL"
+{{ else if eq .Values.cloudfunc.eventTrigger  "storageBucket" }}
+  eventTrigger:
+    eventType: "providers/cloud.storage/eventTypes/object.change"
+    resourceRef:
+      name: "{{ .Release.Name }}-cloudfunctions-storagebucket"
+      kind: "StorageBucket"
+    failurePolicy: true
+    service: "storage.googleapis.com"
+---
+apiVersion: storage.cnrm.cloud.google.com/v1beta1
+kind: StorageBucket
+metadata:
+  name: {{ .Release.Name }}-cloudfunctions-storagebucket
+spec:
+  lifecycleRule:
+    - action:
+        type: Delete
+      condition:
+        age: 7
+  versioning:
+    enabled: true
+{{ end }}
