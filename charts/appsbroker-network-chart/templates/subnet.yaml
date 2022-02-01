@@ -1,0 +1,22 @@
+{{ if .Values.subnet.create }}
+{{- range $k, $v := .Values.subnet.create }}
+apiVersion: compute.cnrm.cloud.google.com/v1beta1
+kind: ComputeSubnetwork
+metadata:
+  labels:
+    label-one: "value-one"
+  name: {{ $.Release.Name }}-{{ $k }}-subnet
+spec:
+  ipCidrRange: {{ $v.ip_range }}
+  region: {{ $v.region }}
+  description: {{ $k }} Subnetwork via Config Connector
+  privateIpGoogleAccess: false
+  networkRef:
+    name: {{ $.Release.Name }}-network
+  logConfig:
+    aggregationInterval: INTERVAL_10_MIN
+    flowSampling: 0.5
+    metadata: INCLUDE_ALL_METADATA
+---
+{{- end }}
+{{- end }}
