@@ -1,0 +1,33 @@
+apiVersion: v1
+entries:
+  appsbroker-cloudfunction-chart:
+  - apiVersion: v2
+    created: "2022-02-01T16:12:16.873477586Z"
+    description: A Helm chart for deploying CouldFunctions via Config Connector
+    digest: 272935ee3e4a9f21ba8d72d1fb84ca3baf3ef2bd15b8f24fc8934c6de48a27fe
+    name: appsbroker-cloudfunction-chart
+    type: application
+    urls:
+    - https://github.com/lewisstrong-appsbroker/helm-charts/releases/download/appsbroker-cloudfunction-chart-0.4.0/appsbroker-cloudfunction-chart-0.4.0.tgz
+    version: 0.4.0
+  appsbroker-cloudrun-chart:
+  - apiVersion: v2
+    created: "2022-02-01T16:12:17.023941328Z"
+    description: A Helm chart for deploying CloudRun via Config Connector
+    digest: d642b3f99b674c3d6b38c061f01570113ee253b334e12d84fe61290e1b68965e
+    name: appsbroker-cloudrun-chart
+    type: application
+    urls:
+    - https://github.com/lewisstrong-appsbroker/helm-charts/releases/download/appsbroker-cloudrun-chart-0.2.0/appsbroker-cloudrun-chart-0.2.0.tgz
+    version: 0.2.0
+  appsbroker-network-chart:
+  - apiVersion: v2
+    created: "2022-02-01T16:12:17.282256516Z"
+    description: A Helm chart for deploying a VPC Network and Subnets via Config Connector
+    digest: 4be501910282b1d6ddafd6fddc4a9bf8522611ab9c9985a92b25b9b7a6b49332
+    name: appsbroker-network-chart
+    type: application
+    urls:
+    - https://github.com/lewisstrong-appsbroker/helm-charts/releases/download/appsbroker-network-chart-0.2.0/appsbroker-network-chart-0.2.0.tgz
+    version: 0.2.0
+generated: "2022-02-01T16:12:17.282262516Z"
