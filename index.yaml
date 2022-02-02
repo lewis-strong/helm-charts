@@ -22,6 +22,15 @@ entries:
     version: 0.2.0
   appsbroker-network-chart:
   - apiVersion: v2
+    created: "2022-02-02T16:00:52.642299827Z"
+    description: A Helm chart for deploying a VPC Network and Subnets via Config Connector
+    digest: 7e830a221b3c96db5c434f59bb75d9077192bb1897d4ad7bd029e902372f5785
+    name: appsbroker-network-chart
+    type: application
+    urls:
+    - https://github.com/lewisstrong-appsbroker/helm-charts/releases/download/appsbroker-network-chart-0.3.0/appsbroker-network-chart-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
     created: "2022-02-01T16:12:17.282256516Z"
     description: A Helm chart for deploying a VPC Network and Subnets via Config Connector
     digest: 4be501910282b1d6ddafd6fddc4a9bf8522611ab9c9985a92b25b9b7a6b49332
@@ -32,6 +41,15 @@ entries:
     version: 0.2.0
   appsbroker-project-chart:
   - apiVersion: v2
+    created: "2022-02-02T16:00:52.789749648Z"
+    description: A Helm chart for deploying a Project via Config Connector
+    digest: 2896b0efc7dc412321f92714501967ed232d7d5bbd2a03def2337b95c0c80a2b
+    name: appsbroker-project-chart
+    type: application
+    urls:
+    - https://github.com/lewisstrong-appsbroker/helm-charts/releases/download/appsbroker-project-chart-0.2.0/appsbroker-project-chart-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     created: "2022-02-02T15:29:24.290009088Z"
     description: A Helm chart for deploying a Project via Config Connector
     digest: 71e21e3d38e561020298150a48bc5cad310d74453eb9ebb38df14b2c35ff41c9
@@ -40,4 +58,4 @@ entries:
     urls:
     - https://github.com/lewisstrong-appsbroker/helm-charts/releases/download/appsbroker-project-chart-0.1.0/appsbroker-project-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2022-02-02T15:29:24.290041388Z"
+generated: "2022-02-02T16:00:52.789766049Z"
