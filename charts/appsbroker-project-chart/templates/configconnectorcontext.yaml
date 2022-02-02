@@ -4,4 +4,4 @@ metadata:
   name: configconnectorcontext.core.cnrm.cloud.google.com
   namespace: {{ .Release.Name }}
 spec:
-  googleServiceAccount: "{{ .Release.Name }}@config-connector-main.iam.gserviceaccount.com"
+  googleServiceAccount: "{{ .Release.Name }}@{{ .Values.mgmtAccount }}.iam.gserviceaccount.com"

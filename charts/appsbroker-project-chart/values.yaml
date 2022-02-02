@@ -2,9 +2,12 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
+mgmtAccount:
+
 project:
-  parentFolderID: 1060419413923
-  billingAccountID: 0119B9-36A410-C6B39B
+  parentFolderID: ""
+  billingAccountID: ""
+  organizationID: ""
 
 subnet:
   create:
