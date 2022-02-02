@@ -1,0 +1,16 @@
+apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
+kind: Project
+metadata:
+  annotations:
+    cnrm.cloud.google.com/organization-id: "388347670233"
+    cnrm.cloud.google.com/auto-create-network: "false"
+  labels:
+    cnrm-managed: "true"
+  name: {{ .Release.Name }}
+  namespace: resource-manager
+spec:
+  name: {{ .Release.Name }}
+  folderRef:
+    external: {{ .Values.project.parentFolderID | quote }}
+  billingAccountRef:
+    external: {{ .Values.project.billingAccountID | quote }}

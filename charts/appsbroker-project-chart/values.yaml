@@ -1,0 +1,13 @@
+# Default values for appsbroker-project-chart.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+project:
+  parentFolderID: 1060419413923
+  billingAccountID: 0119B9-36A410-C6B39B
+
+subnet:
+  create:
+    private:
+      ip_range: 192.168.0.0/20
+      region: europe-west2
