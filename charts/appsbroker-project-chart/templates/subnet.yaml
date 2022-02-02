@@ -6,7 +6,7 @@ metadata:
   labels:
     label-one: "value-one"
   name: {{ $.Release.Name }}-{{ $k }}-subnet
-  namespace: {{ $.Release.Name }}
+  namespace: ab-{{ $.Release.Name }}-{{ $.Values.project.environment }}
 spec:
   ipCidrRange: {{ $v.ip_range }}
   region: {{ $v.region }}

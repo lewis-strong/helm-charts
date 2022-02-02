@@ -5,9 +5,10 @@
 mgmtAccount:
 
 project:
-  parentFolderID: ""
-  billingAccountID: ""
-  organizationID: ""
+  parentFolderID:
+  billingAccountID:
+  organizationID:
+  environment:
 
 subnet:
   create:
