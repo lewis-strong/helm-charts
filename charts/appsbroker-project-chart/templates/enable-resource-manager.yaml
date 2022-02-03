@@ -1,0 +1,8 @@
+apiVersion: serviceusage.cnrm.cloud.google.com/v1beta1
+kind: Service
+metadata:
+  name: cloudresourcemanager.googleapis.com
+  namespace: resource-manager
+spec:
+  projectRef:
+    external: project-factory-manager
