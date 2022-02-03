@@ -7,10 +7,10 @@ metadata:
   labels:
     cnrm-managed: "true"
     environment: {{ .Values.project.environment | quote }}
-  name: ab-{{ .Release.Name }}-{{ .Values.project.environment }}
+  name: {{ .Values.project.customer }}-{{ .Values.project.name }}-{{ .Values.project.environment }}
   namespace: resource-manager
 spec:
-  name: ab-{{ .Release.Name }}-{{ .Values.project.environment }}
+  name: {{ .Values.project.customer }}-{{ .Values.project.name }}-{{ .Values.project.environment }}
   folderRef:
     external: {{ .Values.project.parentFolderID | quote }}
   billingAccountRef:

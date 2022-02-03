@@ -1,8 +1,8 @@
 apiVersion: compute.cnrm.cloud.google.com/v1beta1
 kind: ComputeNetwork
 metadata:
-  name: {{ .Release.Name }}-network
-  namespace: ab-{{ .Release.Name }}-{{ .Values.project.environment }}
+  name: {{ .Values.project.name }}-network
+  namespace: {{ .Values.project.customer }}-{{ .Values.project.name }}-{{ .Values.project.environment }}
 spec:
   routingMode: REGIONAL
   autoCreateSubnetworks: false

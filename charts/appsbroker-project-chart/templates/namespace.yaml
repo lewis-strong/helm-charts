@@ -1,7 +1,7 @@
 kind: Namespace
 apiVersion: v1
 metadata:
-  name: ab-{{ .Release.Name }}-{{ .Values.project.environment }}
+  name: {{ .Values.project.customer }}-{{ .Values.project.name }}-{{ .Values.project.environment }}
   labels:
-    name: ab-{{ .Release.Name }}-{{ .Values.project.environment }}
+    name: {{ .Values.project.customer }}-{{ .Values.project.name }}-{{ .Values.project.environment }}
     environement: {{ .Values.project.environment }}

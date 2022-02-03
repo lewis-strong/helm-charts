@@ -5,15 +5,15 @@ kind: ComputeSubnetwork
 metadata:
   labels:
     label-one: "value-one"
-  name: {{ $.Release.Name }}-{{ $k }}-subnet
-  namespace: ab-{{ $.Release.Name }}-{{ $.Values.project.environment }}
+  name: {{ .Values.project.name }}-{{ $k }}-subnet
+  namespace: {{ .Values.project.customer }}-{{ .Values.project.name }}-{{ .Values.project.environment }}
 spec:
   ipCidrRange: {{ $v.ip_range }}
   region: {{ $v.region }}
   description: {{ $k }} Subnetwork via Config Connector
   privateIpGoogleAccess: false
   networkRef:
-    name: {{ $.Release.Name }}-network
+    name: {{ .Values.project.name }}-network
   logConfig:
     aggregationInterval: INTERVAL_10_MIN
     flowSampling: 0.5
