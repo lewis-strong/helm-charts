@@ -5,8 +5,10 @@ metadata:
     cnrm.cloud.google.com/organization-id: {{ .Values.project.organizationID | quote }}
     cnrm.cloud.google.com/auto-create-network: "false"
   labels:
-    cnrm-managed: "true"
+    customer: {{ .Values.project.customer | quote }}
+    project_name: {{ .Values.project.name | quote }}
     environment: {{ .Values.project.environment | quote }}
+
   name: {{ .Values.project.customer }}-{{ .Values.project.name }}-{{ .Values.project.environment }}
   namespace: resource-manager
 spec:
