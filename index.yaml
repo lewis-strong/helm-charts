@@ -41,6 +41,15 @@ entries:
     version: 0.2.0
   appsbroker-project-chart:
   - apiVersion: v2
+    created: "2022-02-03T16:59:55.575442369Z"
+    description: A Helm chart for deploying a Project via Config Connector
+    digest: a719c4e03e0fee2e19fcb962244102ea958b1d78d4a439e0637645f5c701d45a
+    name: appsbroker-project-chart
+    type: application
+    urls:
+    - https://github.com/lewisstrong-appsbroker/helm-charts/releases/download/appsbroker-project-chart-0.5.0/appsbroker-project-chart-0.5.0.tgz
+    version: 0.5.0
+  - apiVersion: v2
     created: "2022-02-03T16:12:48.570496648Z"
     description: A Helm chart for deploying a Project via Config Connector
     digest: f635032cb6ddc0827fafa9e5de8b621cdd926f380eb44dd2a74e851cae39c458
@@ -76,4 +85,4 @@ entries:
     urls:
     - https://github.com/lewisstrong-appsbroker/helm-charts/releases/download/appsbroker-project-chart-0.1.0/appsbroker-project-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2022-02-03T16:12:48.570845172Z"
+generated: "2022-02-03T16:59:55.575617975Z"
