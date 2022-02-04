@@ -1,0 +1,12 @@
+# Default values for appsbroker-api-enablement-chart.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+accountID:
+
+enableAPI:
+  billing: false
+  compute: false
+  resourceManager: false
+
+
