@@ -4,7 +4,7 @@ apiVersion: compute.cnrm.cloud.google.com/v1beta1
 kind: ComputeSubnetwork
 metadata:
   labels:
-    label-one: "value-one"
+    environment: {{ $.Values.project.environment | quote }}
   name: {{ $.Values.project.name }}-{{ $k }}-subnet
   namespace: {{ $.Values.project.customer }}-{{ $.Values.project.name }}-{{ $.Values.project.environment }}
 spec:

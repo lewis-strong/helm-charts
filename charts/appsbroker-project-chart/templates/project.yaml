@@ -10,7 +10,7 @@ metadata:
     environment: {{ .Values.project.environment | quote }}
 
   name: {{ .Values.project.customer }}-{{ .Values.project.name }}-{{ .Values.project.environment }}
-  namespace: resource-manager
+  namespace: {{ .Values.mgmtAccount }}
 spec:
   name: {{ .Values.project.customer }}-{{ .Values.project.name }}-{{ .Values.project.environment }}
   folderRef:
