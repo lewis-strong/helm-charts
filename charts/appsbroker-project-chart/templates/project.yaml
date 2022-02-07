@@ -17,3 +17,14 @@ spec:
     external: {{ .Values.project.parentFolderID | quote }}
   billingAccountRef:
     external: {{ .Values.project.billingAccountID | quote }}
+---
+apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
+kind: ResourceManagerPolicy
+metadata:
+  name: resourcemanagerpolicy-sample-project
+spec:
+  projectRef:
+    name: resourcemanagerpolicy-dep-project
+  constraint: "constraints/compute.skipDefaultNetworkCreation"
+  booleanPolicy:
+    enforced: true
