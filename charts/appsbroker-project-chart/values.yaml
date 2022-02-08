@@ -15,7 +15,7 @@ project:
 subnet:
   create:
     private:
-      ip_range: 192.168.0.0/20
+      cidr_range: 192.168.0.0/20
       region: europe-west2
 
 iam:

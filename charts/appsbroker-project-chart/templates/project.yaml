@@ -21,10 +21,10 @@ spec:
 apiVersion: resourcemanager.cnrm.cloud.google.com/v1beta1
 kind: ResourceManagerPolicy
 metadata:
-  name: resourcemanagerpolicy-sample-project
+  name: {{ .Values.project.customer }}-{{ .Values.project.name }}-{{ .Values.project.environment }}-policy
 spec:
   projectRef:
-    name: resourcemanagerpolicy-dep-project
+    name: {{ .Values.project.customer }}-{{ .Values.project.name }}-{{ .Values.project.environment }}
   constraint: "constraints/compute.skipDefaultNetworkCreation"
   booleanPolicy:
     enforced: true

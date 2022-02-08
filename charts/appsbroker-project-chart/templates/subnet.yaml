@@ -8,7 +8,7 @@ metadata:
   name: {{ $.Values.project.name }}-{{ $k }}-subnet
   namespace: {{ $.Values.project.customer }}-{{ $.Values.project.name }}-{{ $.Values.project.environment }}
 spec:
-  ipCidrRange: {{ $v.ip_range }}
+  ipCidrRange: {{ $v.cidr_range }}
   region: {{ $v.region }}
   description: {{ $k }} Subnetwork via Config Connector
   privateIpGoogleAccess: false
