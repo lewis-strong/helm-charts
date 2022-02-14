@@ -4,6 +4,12 @@ The Appsbroker Project Chart is designed to create a new Project, set up this pr
 
 The idea is to create a repeatable pattern in which Projects can be quickly created and bootstrapped with little input/overhead.
 
+## Installation
+
+```bash
+helm repo add appsbroker https://lewisstrong-appsbroker.github.io/helm-charts/
+```
+
 ## Values
 
 | Value                    | Description                                                                           | Type   | 
