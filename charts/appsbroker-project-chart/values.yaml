@@ -20,5 +20,5 @@ subnet:
 
 iam:
 # List of users with viewer permissions to Project
-# viewer:
+  viewer:
 #   - user:example@example.com
