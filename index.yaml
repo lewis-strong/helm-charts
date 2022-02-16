@@ -1,13 +1,23 @@
 apiVersion: v1
 entries:
+  appsbroker-api-enablement-chart:
+  - apiVersion: v2
+    created: "2022-02-16T12:43:20.457926877Z"
+    description: A Helm chart for enabling GCP APIs via Config Connector
+    digest: a4fe127b6df86ba4743294182b3cd9b43ab77d716009d88ed9b860a56e2fd6a6
+    name: appsbroker-api-enablement-chart
+    type: application
+    urls:
+    - https://github.com/lewisstrong-appsbroker/helm-charts/releases/download/appsbroker-api-enablement-chart-0.2.0/appsbroker-api-enablement-chart-0.2.0.tgz
+    version: 0.2.0
   appsbroker-project-chart:
   - apiVersion: v2
-    created: "2022-02-14T10:20:27.494919821Z"
+    created: "2022-02-16T12:43:20.624057384Z"
     description: A Helm chart for deploying a Project via Config Connector
-    digest: c74f6bd2626a2e247b2b1e43d7860efdced4ca64f64058ca89ab9bf4d4e9cc2a
+    digest: 79d789b15dc2392b4175c0f053d6199f8c7b7697db7809ffe7e8e41bb174b9c3
     name: appsbroker-project-chart
     type: application
     urls:
-    - https://github.com/lewisstrong-appsbroker/helm-charts/releases/download/appsbroker-project-chart-0.9.0/appsbroker-project-chart-0.9.0.tgz
-    version: 0.9.0
-generated: "2022-02-14T10:20:27.494929921Z"
+    - https://github.com/lewisstrong-appsbroker/helm-charts/releases/download/appsbroker-project-chart-0.10.0/appsbroker-project-chart-0.10.0.tgz
+    version: 0.10.0
+generated: "2022-02-16T12:43:20.624062784Z"
