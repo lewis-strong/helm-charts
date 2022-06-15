@@ -1,0 +1,20 @@
+apiVersion: compute.cnrm.cloud.google.com/v1beta1
+kind: ComputeNetwork
+metadata:
+  name: computeinstance-{{ .Release.Name }}-cloudmachine
+spec:
+  routingMode: REGIONAL
+  autoCreateSubnetworks: false
+---
+apiVersion: compute.cnrm.cloud.google.com/v1beta1
+kind: ComputeSubnetwork
+metadata:
+  name: computeinstance-{{ .Release.Name }}-cloudmachine
+spec:
+  networkRef:
+    name: computeinstance-{{ .Release.Name }}-cloudmachine
+  ipCidrRange: 10.2.0.0/16
+  region: {{ .Values.compute.region }}
+  secondaryIpRange:
+    - rangeName: cloudrange
+      ipCidrRange: 10.3.16.0/20

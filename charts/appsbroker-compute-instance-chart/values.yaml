@@ -1,0 +1,8 @@
+# Default values for appsbroker_chart.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+compute:
+  region: europe-west2
+  zone: europe-west2-a
+  machineType: n1-standard-2
