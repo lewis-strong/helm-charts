@@ -10,6 +10,16 @@ entries:
     urls:
     - https://github.com/lewisstrong-appsbroker/helm-charts/releases/download/appsbroker-api-enablement-chart-0.2.0/appsbroker-api-enablement-chart-0.2.0.tgz
     version: 0.2.0
+  appsbroker-compute-instance-chart:
+  - apiVersion: v2
+    created: "2022-06-15T14:36:06.653599371Z"
+    description: A Helm chart for deploying Compute Instances via Config Connector
+    digest: a77ca22e34072edf8292ad290bbf03911bf0c6dedecb68954eed968fe3240023
+    name: appsbroker-compute-instance-chart
+    type: application
+    urls:
+    - https://github.com/lewisstrong-appsbroker/helm-charts/releases/download/appsbroker-compute-instance-chart-0.1.0/appsbroker-compute-instance-chart-0.1.0.tgz
+    version: 0.1.0
   appsbroker-project-chart:
   - apiVersion: v2
     created: "2022-02-16T14:32:39.483029996Z"
@@ -29,4 +39,4 @@ entries:
     urls:
     - https://github.com/lewisstrong-appsbroker/helm-charts/releases/download/appsbroker-project-chart-0.10.0/appsbroker-project-chart-0.10.0.tgz
     version: 0.10.0
-generated: "2022-02-16T14:32:39.483039396Z"
+generated: "2022-06-15T14:36:06.653608186Z"
